@@ -5,19 +5,17 @@
 
 :root {
     background: chocolate;
-    --card-height: 750px;
+    --card-height: 770px;
     --card-width: 560px;
-    --btn-h: 80px;
+    --btn-h: 65px;
 }
 
-/* div:not(#wt-sky-root) {
-    border: 1px solid red;
-} */
-
 .container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
     background-color: white;
     margin: 0 auto;
-    /* outline: 1px solid; */
     border-radius: 20px;
     height: var(--card-height);
     width: var(--card-width);
@@ -25,7 +23,7 @@
 
 .geo {
     text-align: center;
-    padding: 25px 0 15px;
+    padding: 25px 0 0;
     color: #000a
 }
 
@@ -56,6 +54,7 @@
 .info-head h1 {
     font-weight: 100;
     font-size: 40px;
+    /* margin: 0 0 15px; */
 }
 
 .info-main {
@@ -65,15 +64,15 @@
 
 .follow-btn a {
     display: inline-block;
-    padding: calc((var(--btn-h) - 30px) / 2);
+    padding: calc((var(--btn-h) - 26px) / 2);
     background-color: rgb(255, 157, 0);
     color: white;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 600;
-    width: 35%;
+    width: 32%;
     height: var(--btn-h);
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 4px 1px rgb(153, 97, 0);
 }
 .follow-btn a:hover {
@@ -82,10 +81,38 @@
 
 .flex-container {
     display: flex;
-    align-content: flex-end;
+    justify-content: space-around;
+    align-items: end;
+    margin: 30px 0 0;
 }
 
 .footer > div {
-    background-color: rgb(92, 85, 63);
+    display: flex;
+    background-color: rgb(57, 53, 43);
     color: white;
+    height: 110px;
+    width: calc(var(--card-width) / 3 );
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.footer > div:nth-child(1) {
+    border-bottom-left-radius: 20px;
+}
+
+.footer > div:nth-child(2) {
+    border-width: 0 1px;
+    border-color: #fff3;
+    border-style: solid;
+}
+
+.footer > div:nth-child(3) {
+    border-bottom-right-radius: 20px;
+}
+
+.red {
+    color: rgb(204, 111, 111);
 }
