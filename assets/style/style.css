@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    background: chocolate;
+    --card-height: 750px;
+    --card-width: 560px;
+    --btn-h: 80px;
+}
+
+/* div:not(#wt-sky-root) {
+    border: 1px solid red;
+} */
+
+.container {
+    background-color: white;
+    margin: 0 auto;
+    /* outline: 1px solid; */
+    border-radius: 20px;
+    height: var(--card-height);
+    width: var(--card-width);
+}
+
+.geo {
+    text-align: center;
+    padding: 25px 0 15px;
+    color: #000a
+}
+
+.geo > p > i {
+    margin: 0 5px;
+    outline: 1.5px solid;
+    border-radius: 50%;
+    width: 16px;
+    padding-right: 2px;
+}
+
+.img-container {
+    text-align: center;
+}
+
+.photo {
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+    border: 15px solid white;
+    box-shadow: 0 3px #0002;
+}
+
+.info-container {
+    text-align: center;
+}
+
+.info-head h1 {
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.info-main {
+    width: 60%;
+    margin: 0 auto 35px;
+}
+
+.follow-btn a {
+    display: inline-block;
+    padding: calc((var(--btn-h) - 30px) / 2);
+    background-color: rgb(255, 157, 0);
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 600;
+    width: 35%;
+    height: var(--btn-h);
+    border-radius: 15px;
+    box-shadow: 0 4px 1px rgb(153, 97, 0);
+}
+.follow-btn a:hover {
+    background: rgb(230, 142, 0);
+}
+
+.flex-container {
+    display: flex;
+    align-content: flex-end;
+}
+
+.footer > div {
+    background-color: rgb(92, 85, 63);
+    color: white;
+}
